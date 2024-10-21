@@ -1,0 +1,26 @@
+<ion-card>
+  <img alt="Silhouette of mountains" src="../../../assets/img/perimetroTriangulo.png" width="300px" />
+  <ion-card-header>
+    <ion-card-title>Perimetro de un Triangulo</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      <ion-input [(ngModel)]="ladoAInputStr" label="Ingrese Lado A (cm)" placeholder="Lado A"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="ladoBInputStr" label="Ingrese Lado B (cm)" placeholder="Lado B"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="ladoCInputStr" label="Ingrese Lado B (cm)" placeholder="Lado C"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-buttons slot="start">
+        <ion-button (click)="calcularPerimetroTriangulo()" fill="solid">Calcular Perimetro</ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    {{resultado}}
+  </ion-card-content>
+</ion-card>
